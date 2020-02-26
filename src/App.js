@@ -17,7 +17,7 @@ class App extends Component {
     shuffledArray: buttons,
     currentScore: 0,
     bestScore: 0,
-    win: false
+    win: null
   };
 
   //arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -30,17 +30,30 @@ class App extends Component {
     // We'll modify this object and use it to set our component's state
     const newState = { ...this.state };
 
+    //console.log(this.state.win);
+
     if(newState.clickedButtons.includes(btnNum)){
-      
+      console.log("this should be false");
+      newState.win = false;
+      newState.bestScore = newState.bestScore > newState.currentScore ?
+      newState.bestScore : newState.currentScore;
+      newState.clickedButtons = [];
+      newState.currentScore = 0;
     } else{
+      console.log("this should be true");
       newState.clickedButtons.push(btnNum);
       newState.currentScore++;
       newState.bestScore = newState.bestScore > newState.currentScore ?
         newState.bestScore : newState.currentScore;
+      newState.win = true;
+      //console.log(newState.win);
     }; 
-  
-    this.setState(newState);
-    this.shuffleDogs();
+   // console.log(this.state.win);
+    console.log(newState);
+    this.setState(newState, () => {
+      console.log(this.state);
+      this.shuffleDogs();
+    }); 
   };
 
   shuffleDogs = () => {
