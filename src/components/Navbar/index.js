@@ -6,6 +6,13 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#">
+          Puppy Click Game
+        </a>
+        <h4 className="mx-auto">You Guessed Correctly!
+        </h4>
+        <h4 className="mx-auto">Current Score: 0 | Top Score: 0
+        </h4>
       
     </nav>
   );
