@@ -1,3 +1,26 @@
+# Puppy-Clicky-Game
+Don't hit the same dog twice...
+
+Try out a fun memory game in which you get a point for each different dog that is chosen... but be careful, they move around for each
+click.
+
+Please access my site at https://puppy-click-game.herokuapp.com/.
+
+
+## Table of Contents
+* [About](#about)
+* [Technical Features](#technical-features)
+* [Build Tools](#build-tools)
+* [License](#license)
+
+
+## About
+See a demo of the game.
+
+<img src="public/assets/images/game-demo.gif">
+
+## Technical Features
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +89,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Build Tools
+* HTML/CSS
+* Bootstrap 4.4.1
+* React
+
+## License
+* Licensed under the [MIT License](./LICENSE).
