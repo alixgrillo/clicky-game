@@ -17,7 +17,7 @@ Please access my site at https://puppy-click-game.herokuapp.com/.
 ## About
 See a demo of the game.
 
-<img src="public/assets/images/game-demo.gif">
+<img src="./public/images/game-demo.gif">
 
 ## Technical Features
 
